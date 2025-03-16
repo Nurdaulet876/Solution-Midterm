@@ -1,5 +1,5 @@
 # Payment Gateway System
-• Overview
+• Overview:
 The Payment Gateway System is designed to simulate a flexible and extensible payment processing system that supports multiple payment methods. It utilizes various design patterns to ensure clean architecture, flexibility, and ease of maintenance.
 
 • Key Features:
@@ -8,7 +8,7 @@ The Payment Gateway System is designed to simulate a flexible and extensible pay
 (3) Adapter Pattern: An adapter (PayPalAPIAdapter) is used to integrate an external PayPal service into the system, ensuring it adheres to the PaymentMethod interface.
 (4) Transaction Logging: The system logs all transactions and maintains a history of processed transactions using the Singleton Pattern (Logger class).
 
-• Architecture
+• Architecture:
 Design Patterns Used:
 • Factory Method Pattern:
 The PaymentFactory class is responsible for creating different payment method objects based on input. The concrete PaymentFactoryMethods class defines the creation logic for specific payment types like Credit Card, PayPal, and Crypto.
@@ -17,7 +17,7 @@ The PayPalAPIAdapter is used to adapt an external PayPal service, ensuring it im
 
 
 # Coffee Shop System
-• Overview
+• Overview:
 The Coffee Shop System simulates a coffee ordering system, where users can select different types of coffee and customize their orders by adding various ingredients such as milk, cream, caramel, or chocolate. The system is designed using object-oriented principles and design patterns to ensure flexibility and extensibility.
 
 • Key Features:
@@ -25,7 +25,7 @@ The Coffee Shop System simulates a coffee ordering system, where users can selec
 (2) Decorator Pattern: The Decorator Pattern is used to dynamically add customizations to a base coffee (e.g., Milk, Cream, Caramel, or Chocolate). Each decorator wraps a Coffee object and enhances its behavior without modifying the original object.
 (3) Factory Method Pattern: The Factory Method Pattern is used to create different types of coffee objects (e.g., EspressoFactory, LatteFactory, etc.), promoting separation of concerns and making it easy to add new types of coffee.
 
-• Architecture
+• Architecture:
 Design Patterns Used:
 • Factory Method Pattern:
 The abstract class CoffeeFactory defines the method for creating coffee objects. Concrete factory classes like EspressoFactory, LatteFactory, and AmericanoFactory implement this method to return different coffee objects. This pattern allows for easy expansion of new coffee types without modifying the core logic.
